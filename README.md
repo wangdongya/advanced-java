@@ -1,33 +1,25 @@
 # 互联网 Java 工程师进阶知识完全扫盲
 
-[![actions status](https://github.com/doocs/advanced-java/workflows/Sync/badge.svg)](https://github.com/doocs/advanced-java/actions)
-[![license](https://badgen.net/github/license/doocs/advanced-java?color=green)](https://github.com/doocs/advanced-java/blob/master/LICENSE)
-[![PRs Welcome](https://badgen.net/badge/PRs/welcome/green)](http://makeapullrequest.com)
-[![doocs](https://badgen.net/badge/organization/join%20us/green)](https://doocs.github.io/#/?id=how-to-join)
-[![stars](https://badgen.net/github/stars/doocs/advanced-java)](https://github.com/doocs/advanced-java/stargazers)
-[![forks](https://badgen.net/github/forks/doocs/advanced-java)](https://github.com/doocs/advanced-java/network/members)
-[![contributors](https://badgen.net/github/contributors/doocs/advanced-java)](https://github.com/doocs/advanced-java/tree/master/docs/from-readers#contributors)
-[![issues](https://badgen.net/github/open-issues/doocs/advanced-java)](https://github.com/doocs/advanced-java/issues)
-[![original](https://badgen.net/badge/original/%E4%B8%AD%E5%8D%8E%E7%9F%B3%E6%9D%89/red)](https://github.com/doocs/advanced-java)
-[![notice](https://badgen.net/badge/notice/%E7%BB%B4%E6%9D%83%E8%A1%8C%E5%8A%A8/red)](./docs/extra-page/rights-defending-action.md)
-[![wechat-group](https://badgen.net/badge/chat/%E5%BE%AE%E4%BF%A1%E4%BA%A4%E6%B5%81/cyan)](#公众号)
-[![coding](https://badgen.net/badge/leetcode/%E5%88%B7%E9%A2%98%E5%B0%8F%E9%98%9F/cyan)](https://github.com/doocs/leetcode)
+[![stars](https://img.shields.io/github/stars/doocs/advanced-java?color=42b883&logo=github&style=flat-square)](https://github.com/doocs/advanced-java/stargazers)
+[![forks](https://img.shields.io/github/forks/doocs/advanced-java?color=42b883&logo=github&style=flat-square)](https://github.com/doocs/advanced-java/network/members)
+[![actions status](https://img.shields.io/github/workflow/status/doocs/advanced-java/Sync?color=42b883&label=sync&logo=github&style=flat-square)](https://github.com/doocs/advanced-java/actions?query=workflow%3ASync)
+[![actions status](https://img.shields.io/github/workflow/status/doocs/advanced-java/Prettier?color=42b883&label=prettier&logo=github&style=flat-square)](https://github.com/doocs/advanced-java/actions?query=workflow%3APrettier)
+[![license](https://img.shields.io/github/license/doocs/advanced-java?color=42b883&style=flat-square)](./LICENSE)
+[![doocs](https://img.shields.io/badge/organization-join%20us-42b883?style=flat-square)](https://doocs.github.io/#/?id=how-to-join)
+[![original](https://img.shields.io/badge/original-%E4%B8%AD%E5%8D%8E%E7%9F%B3%E6%9D%89-42b883?style=flat-square)](https://github.com/doocs/advanced-java)
+[![notice](https://img.shields.io/badge/notice-%E7%BB%B4%E6%9D%83%E8%A1%8C%E5%8A%A8-42b883?style=flat-square)](./docs/extra-page/rights-defending-action.md)
+[![wechat-group](https://img.shields.io/badge/chat-%E5%BE%AE%E4%BF%A1%E4%BA%A4%E6%B5%81-42b883?style=flat-square)](#公众号)
+[![coding](https://img.shields.io/badge/leetcode-%E5%88%B7%E9%A2%98%E5%B0%8F%E9%98%9F-42b883?style=flat-square)](https://github.com/doocs/leetcode)
 
 本项目大部分内容来自中华石杉，版权归作者所有，内容涵盖[高并发](#高并发架构)、[分布式](#分布式系统)、[高可用](#高可用架构)、[微服务](#微服务架构)、[海量数据处理](#海量数据处理)等领域知识。我对这部分知识做了一个系统的整理，方便学习查阅。
 
-学习之前，先来看看 [Issues 讨论区](https://github.com/doocs/advanced-java/issues/9#issue-394275038)的技术面试官是怎么说的吧。本项目也欢迎各位开发者朋友到 Issues 讨论区分享自己的一些想法和实践经验。
+本项目已开通 Discussions 功能。学习之前，先来看看 [Discussions 讨论区](https://github.com/doocs/advanced-java/discussions/9)的技术面试官是怎么说的吧。本项目欢迎各位开发者朋友到 Discussions 讨论区分享自己的一些想法和实践经验。也不妨 Star 关注 [doocs/advanced-java](https://github.com/doocs/advanced-java)，随时追踪项目最新动态。
+
+本项目基于 Docsify 进行构建，并使用开源小工具 [Gitee Pages Action](https://github.com/yanglbme/gitee-pages-action) 实现站点的自动部署更新。目前支持以下三个站点访问：
 
 - Netlify: https://adjava.netlify.app
 - Gitee Pages: https://doocs.gitee.io/advanced-java
 - GitHub Pages: https://doocs.github.io/advanced-java
-
-注：本项目站点基于 [Docsify](https://docsify.js.org) 构建，如果你希望在本地运行，请按照以下步骤进行操作：
-
-1. 安装 NodeJS 环境：https://nodejs.org/zh-cn/
-2. 安装 [Docsify](https://docsify.js.org)：`npm i docsify-cli -g`
-3. 使用 Git 克隆(HTTPS / SSH / GitHub CLI)本项目到你的本地环境：`git clone git@github.com:doocs/advanced-java.git`
-4. 进入 `advanced-java` 根目录：`cd advanced-java`
-5. 执行命令，运行本项目：`docsify serve`
 
 ## 高并发架构
 
@@ -62,6 +54,7 @@
 - [如何保证缓存与数据库的双写一致性？](./docs/high-concurrency/redis-consistence.md)
 - [Redis 的并发竞争问题是什么？如何解决这个问题？了解 Redis 事务的 CAS 方案吗？](./docs/high-concurrency/redis-cas.md)
 - [生产环境中的 Redis 是怎么部署的？](./docs/high-concurrency/redis-production-environment.md)
+- [有了解过 Redis rehash 的过程吗？](./docs/high-concurrency/redis-rehash.md)
 
 ### 分库分表
 
@@ -177,6 +170,7 @@
 - [如何从 5 亿个数中找出中位数？](./docs/big-data/find-mid-value-in-500-millions.md)
 - [如何按照 query 的频度排序？](./docs/big-data/sort-the-query-strings-by-counts.md)
 - [如何找出排名前 500 的数？](./docs/big-data/find-rank-top-500-numbers.md)
+- [讲讲大数据中 TopK 问题的常用套路？](./docs/big-data/topk-problems-and-solutions.md)
 
 ---
 
@@ -200,7 +194,7 @@ Doocs 技术社区，致力于打造一个内容完整、持续成长的互联�
 
 <!-- ALL-CONTRIBUTORS-LIST: START - Do not remove or modify this section -->
 
-<a href="https://opencollective.com/doocs/contributors.svg?width=890&button=true"><img src="https://opencollective.com/doocs/contributors.svg?width=1080&button=false" /></a>
+<a href="https://opencollective.com/doocs/contributors.svg?width=890&button=true"><img src="https://opencollective.com/doocs/contributors.svg?width=890&button=false" /></a>
 
 <!-- ALL-CONTRIBUTORS-LIST: END -->
 
@@ -208,23 +202,23 @@ Doocs 技术社区，致力于打造一个内容完整、持续成长的互联�
 
 [Doocs](https://github.com/doocs) 技术社区旗下唯一公众号「**Doocs 开源社区**」​，欢迎扫码关注，**专注分享技术领域相关知识及行业最新资讯**。当然，也可以加我个人微信（备注：GitHub），拉你进技术交流群。
 
+<table>
+  <tr>
+    <td align="center" style="width: 200px;">
+      <a href="https://github.com/doocs">
+        <img src="https://cdn.jsdelivr.net/gh/doocs/advanced-java@main/images/qrcode-for-doocs.jpg" style="width: 400px;"><br>
+        <sub>公众平台</sub>
+      </a><br>
+    </td>
+    <td align="center" style="width: 200px;">
+      <a href="https://github.com/yanglbme">
+        <img src="https://cdn.jsdelivr.net/gh/doocs/advanced-java@main/images/qrcode-for-yanglbme.jpg" style="width: 400px;"><br>
+        <sub>个人微信</sub>
+      </a><br>
+    </td>
+  </tr>
+</table>
+
 关注「**Doocs 开源社区**」公众号，回复 **PDF**，即可获取本项目离线 PDF 文档（283 页精华），学习更加方便！
 
-![](./images/pdf.png)
-
-<table>
-    <tr>
-      <td align="center" style="width: 200px;">
-        <a href="https://github.com/doocs">
-          <img src="./images/qrcode-for-doocs.jpg" style="width: 400px;"><br>
-          <sub>公众平台</sub>
-        </a><br>
-      </td>
-      <td align="center" style="width: 200px;">
-        <a href="https://github.com/yanglbme">
-          <img src="./images/qrcode-for-yanglbme.jpg" style="width: 400px;"><br>
-          <sub>个人微信</sub>
-        </a><br>
-      </td>
-    </tr>
-</table>
+<img src="https://cdn.jsdelivr.net/gh/doocs/advanced-java@main/images/pdf.png" style="width: 600px;"><br>
